@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="../public/userCart.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <main class="main-body">
+
+      <nav class="main-nav">
+
+        <i class='bx bxs-cheese'></i>
+
+
+        <div>
+            <a href="./userHomePage.html">Home</a>
+            <a href="./userWomen.html">Women</a>
+            <a href="./userMen.html">Men</a>
+            <a href="./userJewelry.html">Jewelery</a>
+            <a href="./userElectronic.html">Electronics</a>
+        </div>
+
+
+    
+
+        <i id="user" class='bx bx-user-circle' style='color:#ffffff' ></i>
+        <i id="cart" class='bx bx-cart' style='color:#ffffff' ></i>
+       
+
+
+    </nav>
+
+
+        <section class="cart-main">
+
+
+          <div class="image-container">
+            <img class="rat" src="https://preview.redd.it/my-first-attempt-at-pixel-art-v0-5vx72b617yca1.gif?format=png8&s=1bfb32c47ec0eb912c1ac3d01693a8e4a24c37fd" alt="">
+        
+          </div>
+
+            <div class="table-wrapper">
+              <table id="cart-table">
+                <thead class="cart-head">
+                  <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                  </tr>
+                </thead>
+                <tbody class="cart-body">
+
+                </tbody>
+              </table>
+            </div>
+
+            
+
+
+            <div class="cart-cost">
+
+              <table>
+                <tr id="subtotal-box">
+                  <td></td>
+                  <td class="color">Subtotal</td>
+                  <td id="subtotal" class="color">$0</td>
+                </tr>
+                <tr id="tax-box">
+                  <td></td>
+                  <td class="color">Tax</td>
+                  <td id="tax" class="color">$0</td>
+                </tr>
+                <tr id="total-box">
+                  <td></td>
+                  <td class="color">Total</td>
+                  <td id="total" class="color">$0</td>
+                </tr>
+
+                
+              </table>
+
+
+
+            </div>
+          </section>
+
+
+
+
+
+    </main>
+
+    <script src="../script/cart.js"></script>
+    <script src="../script/userManagement.js"></script>
+    
+</body>
+</html>

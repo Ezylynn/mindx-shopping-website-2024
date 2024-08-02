@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: auto;
+}
+
+.main-body{
+    width: 100%;
+    height: 100vh;
+}
+
+.main-nav{
+    width: 100%;
+    height: 10vh;
+
+    background-color: rgb(69, 38, 58);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
+    
+}
+
+.main-nav > div{
+    width: 65%;
+    
+
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.main-nav > div > a{
+    color: aliceblue;
+    font-size: 1.20rem;
+    font-weight: 100;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+
+
+    
+}
+
+.main-nav > div > a:hover{
+    transition: 0.5s;
+    text-decoration: underline;
+    animation: blink-animation 1.5s infinite;
+    cursor: pointer;
+
+}
+
+
+@keyframes blink-animation {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+  }
+
+
+
+
+#user{
+    font-size: 2.5rem;
+    cursor: pointer;
+
+}
+
+#cart{
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.bxs-cheese{
+    font-size: 3rem;
+    color: white;
+}
+
+
+
+.store{
+    width: 100%;
+    height: 190vh;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(https://cdn.drawception.com/drawings/Snqnrndmbx.png);
+
+  
+
+}
+
+.store-container{
+    width: 70%;
+    height: 170vh;
+
+
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: rgba(11, 15, 39, 0.802);
+    
+}
+
+
+#store-nav{
+    width: 100%;
+    height: 13vh;
+
+    background-color: #2c3358f2;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#store-nav > div{
+    width: 80%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#store-nav > p{
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-left: 1.25rem;
+
+    color:rgb(211, 227, 248) 
+}
+
+#store-nav input{
+    width: 25%;
+    padding-left: 0.5rem;
+    border-radius: 0.2rem;
+    border: none;
+
+}
+
+.menu-button{
+    width: 8%;
+    border-radius:1rem;
+    border: none;
+
+    background-color: rgb(56, 122, 184);
+
+    
+    color: azure;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+
+
+
+}
+
+.menu-button:hover{
+    cursor: pointer;
+    background-color: rgb(49, 105, 157);
+
+
+}
+
+
+#store-body{
+    width: 75%;
+    height: 150vh;
+    padding-top: 5vh;
+
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);  
+    gap: 3rem;      
+    
+    overflow-y: auto;
+ 
+}
+
+
+#store-body > .card{
+    display: block;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.card > img{
+    width: 100%;
+    height: 200px;
+}
+
+
+
+.item-ui{
+    width: 100%;
+    height: 13vh;
+    background-color: rgb(129, 141, 245);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    border-bottom-left-radius: 0.5rem ;
+    border-bottom-right-radius: 0.5rem ;
+
+
+}
+
+.item-ui > *{
+    margin-bottom: 0.5rem;
+}
+
+.item-ui p{
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 600;
+    color: rgb(23, 25, 57);
+}
+
+.item-ui button{
+    width: 30%;
+    height: 3vh;
+
+    border-radius: 0.8rem;
+    border: none;
+
+    background-color: lawngreen;
+    cursor: pointer;
+
+
+}
+
+.item-ui button:hover{
+    cursor: pointer;
+    background-color: rgb(103, 207, 0);
+}
+
+
+
+
+#button-search{
+    background-color: transparent;
+    border: none;
+}
+
+#button-search i{
+    color: yellow;
+    cursor: pointer;
+
+}
+
+#button-search i:hover{
+    color: rgb(224, 224, 9);
+    cursor: pointer;
+
+}

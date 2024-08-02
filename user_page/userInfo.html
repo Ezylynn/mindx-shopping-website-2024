@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/userInfo.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>User Info</title>
+</head>
+<body>
+    
+    <main class="main-body">
+
+        <nav class="main-nav">
+
+            <i class='bx bxs-cheese'></i>
+
+
+            <div>
+                <a href="./userHomePage.html">Home</a>
+                <a href="./userWomen.html">Women</a>
+                <a href="./userMen.html">Men</a>
+                <a href="./userJewelry.html">Jewelery</a>
+                <a href="./userElectronic.html">Electronics</a>
+            </div>
+
+
+        
+    
+            <i id="user" class='bx bx-user-circle' style='color:#ffffff' ></i>
+            <i id="cart" class='bx bx-cart' style='color:#ffffff' ></i>
+           
+
+
+        </nav>
+
+        <section class="user-container">
+
+            <div class="user-main">
+
+
+                <div class="user-title">
+                <p>My Profile</p>
+                </div>
+
+             
+                <form id="user-info" action="">
+
+                    <div>
+                            <p>First Name</p>
+                            <input id="first-name" type="text">
+                            
+                            <p>Last Name</p>
+                            <input  id="last-name" type="text">
+    
+        
+                        <p>Birth Date</p>
+                        <input  id="birth-date" type="date">
+    
+                        <p>Email</p>
+                        <input  id="email" type="text">
+    
+                        <p>Password</p>
+                            <input  id="pass" type="password">
+                    </div>
+
+                   
+                   
+                </form>
+
+
+                <div id="user-options">
+                    <button id="sign-out-user">Sign Out</button>
+                    <button id="delete-user">Delete</button>
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+    </main> 
+    
+
+
+    <script src="../script/userInfo.js"></script>
+    <script src="../script/userManagement.js"></script>
+</body>
+</html>
